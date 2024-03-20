@@ -1,5 +1,8 @@
 {
   "Index": {
     "title": "Hello world!"
+  },
+  "not-found": {
+    "title": "Bonjour le Monde!"
   }
 }
