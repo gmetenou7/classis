@@ -18,7 +18,7 @@
   }
 }
 .inner {
-  @apply flex justify-between;
+  @apply flex justify-between ;
 }
 @media (max-width: 640px) {
   .inner {
@@ -26,7 +26,7 @@
   }
 }
 .groups {
-  @apply flex flex-wrap gap-4;
+  @apply flex flex-wrap gap-6;
 }
 @media (max-width: 640px) {
   .groups {
