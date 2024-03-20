@@ -78,10 +78,10 @@ const Hero = () => {
               <FaStar className="text-green-300 shrink-0" />
               <span>Truspilot</span>
             </p>
-            <p className="pr-2 flex items-center">
+            <div className="pr-2 flex items-center">
               <Rate rate={4.5} />
               <span className="font-semibold">4.5/5</span>
-            </p>
+            </div>
             <small className="text-gray-500 px-2 pb-2">
               Reviewed by 365 users
             </small>
