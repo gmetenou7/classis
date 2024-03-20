@@ -1,4 +1,5 @@
 import { NewslettersSection } from "./NewslettersSection";
+import { Section3 } from "./Section3";
 import { Clients } from "./clients";
 import { Hero } from "./hero";
 import { Section1 } from "./section1";
@@ -8,6 +9,7 @@ const homeComponents = {
   Clients,
   Section1,
   Section2,
+  Section3,
   NewslettersSection,
 };
 

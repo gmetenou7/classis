@@ -5,7 +5,7 @@ import ProductCard from "../cards/productCard";
 
 const Section2 = () => {
   return (
-    <div className="py-[70px] bg-[#202124] px-2">
+    <section className="py-[70px] bg-[#202124] px-2">
       <div className="container text-white flex items-center flex-col mx-auto">
         <Badge
           color="#99999928"
@@ -40,7 +40,7 @@ const Section2 = () => {
             })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
