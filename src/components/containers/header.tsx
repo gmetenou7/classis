@@ -27,6 +27,8 @@ import {
   IconFingerprint,
   IconNotification,
 } from "@tabler/icons-react";
+import Logo from "../commons/logo";
+import LanguageSwitcher from "../buttons/languageSwitcher";
 
 const mockdata = [
   {
@@ -92,21 +94,23 @@ const Header = () => {
     <div className="py-5 px-2 sticky top-0 left-0 bg-white shadow-md z-50">
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <MantineLogo size={30} />
+          {/* <MantineLogo size={30} /> */}
+          <Logo />
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.link}>
               Présentation
             </a>
             <a href="#" className={classes.link}>
-              Learn
+              Contact
             </a>
             <a href="#" className={classes.link}>
-              Academy
+              A propos
             </a>
           </Group>
 
           <Group visibleFrom="sm">
+            <LanguageSwitcher />
             <Button variant="default">Connexion</Button>
             <Button>Inscription</Button>
           </Group>

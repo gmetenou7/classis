@@ -7,6 +7,7 @@ import {
   IconBrandTwitter,
   IconBrandYoutube,
 } from "@tabler/icons-react";
+import Logo from "../commons/logo";
 
 const data = [
   {
@@ -65,7 +66,7 @@ const Footer = () => {
       <div className="container mx-auto p-4">
         <div className={classes.inner}>
           <div className={classes.logo}>
-            <MantineLogo size={30} />
+            <Logo />
             <Text size="xs" c="dimmed" className={classes.description}>
               Build fully functional accessible web applications faster than
               ever
