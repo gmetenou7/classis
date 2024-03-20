@@ -1,35 +1,32 @@
 "use client";
+import classes from "@/styles/header.module.css";
 import {
-  HoverCard,
-  Group,
-  Button,
-  UnstyledButton,
-  Text,
-  SimpleGrid,
-  ThemeIcon,
-  Anchor,
-  Divider,
-  Center,
   Box,
   Burger,
-  Drawer,
+  Button,
+  Center,
   Collapse,
+  Divider,
+  Drawer,
+  Group,
   ScrollArea,
+  Text,
+  ThemeIcon,
+  UnstyledButton,
   rem,
   useMantineTheme,
 } from "@mantine/core";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import { useDisclosure } from "@mantine/hooks";
+import { MantineLogo } from "@mantinex/mantine-logo";
 import {
-  IconNotification,
-  IconCode,
   IconBook,
   IconChartPie3,
-  IconFingerprint,
-  IconCoin,
   IconChevronDown,
+  IconCode,
+  IconCoin,
+  IconFingerprint,
+  IconNotification,
 } from "@tabler/icons-react";
-import classes from "@/styles/header.module.css";
 
 const mockdata = [
   {
@@ -92,7 +89,7 @@ const Header = () => {
   ));
 
   return (
-    <div className="py-5  sticky top-0 left-0 bg-white shadow-md z-50">
+    <div className="py-5 px-2 sticky top-0 left-0 bg-white shadow-md z-50">
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <MantineLogo size={30} />

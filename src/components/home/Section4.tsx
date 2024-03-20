@@ -25,8 +25,8 @@ const Section4 = () => {
     ));
   return (
     <section>
-      <div className="container flex mx-auto py-8 gap-10 items-center space-y-6">
-        <div className="w-1/2">
+      <div className="container flex flex-col lg:flex-row mx-auto py-8 gap-3 lg:gap-10 space-y-6">
+        <div className="lg:w-1/2">
           <Badge
             color="#99999928"
             radius={5}
@@ -48,16 +48,20 @@ const Section4 = () => {
             height={200}
             slideSize="50%"
             slideGap="md"
+            maw={"calc(100vw - 40px)"}
             loop
             slidesToScroll={3}
             plugins={[autoplay.current]}
             onMouseEnter={autoplay.current.stop}
             onMouseLeave={autoplay.current.reset}
+            classNames={{
+              controls: "!hidden",
+            }}
           >
             {slides}
           </Carousel>
         </div>
-        <div className="w-1/2 relative ml-[130px]">
+        <div className="lg:w-1/2 relative ml-[40px] lg:ml-[130px]">
           <div className="rounded-lg p-2 absolute top-9 -left-8 flex items-center gap-4 text-white bg-black max-w-[270px]">
             <Avatar src="/images/placeholder.png" alt="avatar" size={25} />
             <p className="text-sm">
@@ -68,11 +72,11 @@ const Section4 = () => {
             <Avatar src="/images/placeholder.png" alt="avatar" size={25} />
             <p className="text-sm">Excellent Theme 💗</p>
           </div>
-          <RoundedArrow classes="absolute top-[85px] right-[99%]" />
+          <RoundedArrow classes="hidden lg:block absolute top-[85px] right-[99%]" />
           <Image
             height={400}
             width={250}
-            className="object-cover h-full w-full"
+            className="object-cover h-full w-[95%] lg:w-full"
             src="/images/placeholder.png"
             alt="placeholder"
           />

@@ -10,7 +10,7 @@ import { Rate } from "../commons/Rate";
 const Hero = () => {
   return (
     <section className="my-10">
-      <div className="container mx-auto items-center flex gap-4 p-4">
+      <div className="container mx-auto flex-col lg:flex-row items-center flex gap-4 p-4">
         <div className="space-y-3">
           <Badge color="#80808077">🤩 Award-winning digital services</Badge>
           <h1 className="text-4xl font-extrabold leading-[1.5] !my-5">

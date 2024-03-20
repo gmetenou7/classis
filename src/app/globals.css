@@ -30,3 +30,16 @@ body {
 .fill-primary {
   fill: #09b850 !important;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  background-color: rgb(209, 209, 209);
+  padding: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 8px;
+  background-color: #9b9b9b;
+}

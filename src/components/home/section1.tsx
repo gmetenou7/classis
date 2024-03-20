@@ -10,8 +10,8 @@ import Link from "next/link";
 const Section1 = () => {
   return (
     <section className="my-10">
-      <div className="container mx-auto py-6 px-3 gap-10 flex items-center">
-        <div className="flex gap-5 min-h-[500px] w-1/2">
+      <div className="container mx-auto py-6 px-3 gap-10 flex-col lg:flex-row flex items-center">
+        <div className="flex gap-5 min-h-[500px] lg:w-1/2">
           <div className="w-fit flex gap-3">
             <div className="relative w-1/2 h-4/5">
               <Image
@@ -46,7 +46,7 @@ const Section1 = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <Badge color="#acacac77">🤝 Your gateway to digital success</Badge>
           <h3 className="font-bold text-3xl leading-10 my-7">
             Defining the future of online experiences!
@@ -74,8 +74,13 @@ const Section1 = () => {
             <List.Item>Emphasis on ROI-driven solutions</List.Item>
             <List.Item>Emphasis on ROI-driven solutions</List.Item>
           </List>
-          <Link href="#">
+          <Link href="#" className="hidden lg:block">
             <Button bg={"black"} color="white" my={15}>
+              Discover more
+            </Button>
+          </Link>
+          <Link href="#" className="lg:hidden">
+            <Button bg={"black"} color="white" fullWidth my={15}>
               Discover more
             </Button>
           </Link>

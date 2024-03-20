@@ -21,7 +21,7 @@ const Section2 = () => {
         <h2 className="text-3xl font-bold my-7">
           We specialize in the following services
         </h2>
-        <div className="grid grid-cols-4 gap-6 gap-y-[70px] my-5 w-fit">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 gap-y-[70px] my-5 w-fit">
           {Array(8)
             .fill(0)
             .map((product, index) => {

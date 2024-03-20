@@ -20,7 +20,7 @@ const Section3 = () => {
           🚀 Innovative solutions, Measurable results
         </Badge>
         <h2 className="text-4xl font-bold">Get a plan that grows with you</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-3 gap-4">
           <div className="pr-3 border-r space-y-4 border-r-gray-200">
             <CoinWallet />
             <Badge
@@ -65,7 +65,7 @@ const Section3 = () => {
               </p>
             </div>
           </div>
-          <div className="space-y-4 text-white rounded-lg flex flex-col justify-between bg-[#09b850] p-4">
+          <div className="space-y-4 col-span-2 lg:col-span-1 text-white rounded-lg flex flex-col justify-between bg-[#09b850] p-4">
             <div>
               <Badge
                 color="#000000e1"
