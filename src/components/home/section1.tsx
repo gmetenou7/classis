@@ -31,7 +31,7 @@ const Section1 = () => {
               <StatCard count="10+" description="Years of experience" />
               <StatCard
                 count="1.2K"
-                classes="bg-[#09b850]"
+                classes="!bg-[#09b850]"
                 description="Happy customers"
               />
               <div className="col-span-2">

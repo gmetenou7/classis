@@ -52,8 +52,8 @@ const Section3 = () => {
                 "Support for 30+ languages",
                 "Landing pages & Web widgets",
                 "24/7 Dedicated Support",
-              ].map((feature) => (
-                <List.Item>{feature}</List.Item>
+              ].map((feature, index) => (
+                <List.Item key={`feature-${index}`}>{feature}</List.Item>
               ))}
             </List>
             <div>

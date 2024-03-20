@@ -21,13 +21,13 @@ const YellowRate = ({
             <FaStar
               key={`star-${index}`}
               color={iconColor}
-              size={20}
+              size={16}
               {...props}
             />
           );
         })}
       {rate < 5 && rate - Math.floor(rate) !== 0 && (
-        <FaStarHalfAlt color={iconColor} size={20} {...props} />
+        <FaStarHalfAlt color={iconColor} size={16} {...props} />
       )}
       {rate < 5 &&
         Array(5 - Math.ceil(rate))
@@ -37,7 +37,7 @@ const YellowRate = ({
               <FaRegStar
                 key={`star-${index}`}
                 color={iconColor}
-                size={20}
+                size={16}
                 {...props}
               />
             );

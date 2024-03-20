@@ -10,6 +10,7 @@ export default function Index() {
       <homeComponents.Section1 />
       <homeComponents.Section2 />
       <homeComponents.Section3 />
+      <homeComponents.Section4 />
       <homeComponents.NewslettersSection />
     </main>
   );
