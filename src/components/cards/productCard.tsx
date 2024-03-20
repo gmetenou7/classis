@@ -40,7 +40,7 @@ const ProductCard = ({
       <p className="">{description}</p>
       <UnstyledButton
         classNames={{
-          root: "flex items-center justify-center text-[#09b850] gap-2",
+          root: "flex items-center justify-center !my-2 !text-[#09b850] gap-2",
         }}
       >
         <span>{link.label}</span>
