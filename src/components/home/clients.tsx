@@ -26,7 +26,7 @@ const mockdata = [
 
 const Clients = () => {
   return (
-    <section>
+    <section className="my-6">
       <div className="container mx-auto flex gap-6 p-4 justify-between">
         <p className="text-3xl font-bold">
           100+ Companies <br /> trust us

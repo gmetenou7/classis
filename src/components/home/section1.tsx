@@ -3,8 +3,9 @@ import Image from "next/image";
 import React from "react";
 import FilyingsBirds from "../illustrations/filyingsBirds";
 import StatCard from "../cards/statCard";
-import { Badge, List, ThemeIcon } from "@mantine/core";
+import { Badge, Button, List, ThemeIcon } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
+import Link from "next/link";
 
 const Section1 = () => {
   return (
@@ -73,6 +74,11 @@ const Section1 = () => {
             <List.Item>Emphasis on ROI-driven solutions</List.Item>
             <List.Item>Emphasis on ROI-driven solutions</List.Item>
           </List>
+          <Link href="#">
+            <Button bg={"black"} color="white" my={15}>
+              Discover more
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
