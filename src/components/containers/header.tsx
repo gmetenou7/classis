@@ -31,7 +31,6 @@ import {
 } from "@tabler/icons-react";
 import classes from "@/styles/header.module.css";
 
-
 const mockdata = [
   {
     icon: IconCode,
@@ -93,7 +92,7 @@ const Header = () => {
   ));
 
   return (
-    <div className="py-5">
+    <div className="py-5  sticky top-0 left-0 bg-white shadow-md z-50">
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <MantineLogo size={30} />
