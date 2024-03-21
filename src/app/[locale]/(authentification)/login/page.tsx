@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const Login = () => {
   return (
-    <div>
+    <div className="space-y-4">
       <h1 className="w-full text-center font-3xl font-bold">
         Connectez vous maintenant pour gérer
         <br />
