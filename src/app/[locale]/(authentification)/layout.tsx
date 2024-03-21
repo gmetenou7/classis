@@ -5,7 +5,9 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <section className="container flex gap-8 p-4">
-        <aside className="w-1/2 min-h-[100vh]">{children}</aside>
+        <aside className="w-1/2 h-full flex items-center justify-center">
+          {children}
+        </aside>
         <AuthSlider classes="w-1/2" />
       </section>
     </div>

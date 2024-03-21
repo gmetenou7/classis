@@ -1,12 +1,17 @@
 "use client";
-import React, { useRef } from "react";
-import Autoplay from "embla-carousel-autoplay";
 import { Carousel } from "@mantine/carousel";
-import { Card } from "@mantine/core";
-import Image from "next/image";
 import "@mantine/carousel/styles.css";
+import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
+import { useRef } from "react";
 
-const AuthSlider = ({ classes , cardClasses}: { classes?: string, cardClasses? : string }) => {
+const AuthSlider = ({
+  classes,
+  cardClasses,
+}: {
+  classes?: string;
+  cardClasses?: string;
+}) => {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   const slides = Array(7)
     .fill({
@@ -21,7 +26,7 @@ const AuthSlider = ({ classes , cardClasses}: { classes?: string, cardClasses? :
             height={500}
             alt={`slide-${index}`}
             width={300}
-            className={`h-full w-full`}
+            className={`h-full w-full ${cardClasses || ""}`}
           />
           <p className="absolute w-full bottom-8 left-0 text-center text-xl font-semibold">
             {item.description}
@@ -42,9 +47,9 @@ const AuthSlider = ({ classes , cardClasses}: { classes?: string, cardClasses? :
         onMouseLeave={autoplay.current.reset}
         classNames={{
           controls: "!hidden",
-          container : "!h-full",
-          root : "!h-full",
-          viewport : "!h-full"
+          container: "!h-full",
+          root: "!h-full",
+          viewport: "!h-full",
         }}
       >
         {slides}
