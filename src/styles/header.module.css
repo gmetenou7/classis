@@ -1,0 +1,19 @@
+.header {
+  @apply border-b-gray-300 container mx-auto border-solid;
+}
+.link {
+  @apply flex items-center h-full pl-[var(--mantine-spacing-md)] pr-[var(--mantine-spacing-md)] no-underline text-[light-dark(var(--mantine-color-black),var(--mantine-color-white))] font-medium text-[length:var(--mantine-font-size-sm)] bg-[light-dark(var(--mantine-color-gray-0),var(--mantine-color-dark-6))];
+}
+@media only screen and (max-width: var(--mantine-sm-breakpoint)) {
+  .link {
+    @apply h-[rem(42px)] w-full;
+  }
+}
+
+.subLink {
+  @apply w-full pt-[var(--mantine-spacing-xs)] pr-[var(--mantine-spacing-md)] pb-[var(--mantine-spacing-xs)] pl-[var(--mantine-spacing-md)] rounded-[var(--mantine-radius-md)] bg-gray-100;
+}
+
+.dropdownFooter {
+  @apply bg-[light-dark(var(--mantine-color-gray-0),var(--mantine-color-dark-7))] mb-1 mt-[var(--mantine-spacing-sm)] pt-[var(--mantine-spacing-md)] pr-[var(--mantine-spacing-md)] pb-[var(--mantine-spacing-xl)] border-t-gray-300 mx-[*] pl-[2] border-t-[rem(1px)] border-solid;
+}

@@ -1,0 +1,10 @@
+{
+  "Index": {
+    "title": "Bonjour le Monde!"
+  },
+  "not-found": {
+    "title": "Rien à voir ici!",
+    "description": "La page que vous essayez d'ouvrir n'existe pas. Vous avez peut-être mal saisi l'adresse ou la page a été déplacée vers une autre URL. Si vous pensez qu'il s'agit d'une erreur, contactez le support.",
+    "button":"Ramenez-moi à la page d'accueil"
+  }
+}
