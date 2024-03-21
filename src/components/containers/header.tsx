@@ -151,10 +151,10 @@ const Header = () => {
           </UnstyledButton>
           <Collapse in={linksOpened}>{links}</Collapse>
           <a href="#" className={classes.link}>
-            Learn
+            A propos
           </a>
           <a href="#" className={classes.link}>
-            Academy
+            Contact
           </a>
 
           <Divider my="sm" />
