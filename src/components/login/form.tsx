@@ -1,11 +1,16 @@
-"use client"
+"use client";
 import { Link } from "@/navigation";
 import { Button, PasswordInput, TextInput } from "@mantine/core";
 import React from "react";
 import { FaAt, FaLock } from "react-icons/fa6";
 import { useForm } from "@mantine/form";
-import { zodResolver } from 'mantine-form-zod-resolver';
+import { zodResolver } from "mantine-form-zod-resolver";
 import { schema } from "@/app/[locale]/(authentification)/login/schema";
+
+const defaultsInputClasses = {
+  input: "!h-[50px] !text-xl",
+  label: "!text-xl !w-full",
+};
 
 const Form = () => {
   const form = useForm({
@@ -15,39 +20,49 @@ const Form = () => {
     },
     validate: zodResolver(schema),
   });
-  const handleSubmit = (data : any) => {
-    console.log("submit" , data);
+  const handleSubmit = (data: any) => {
+    console.log("submit", data);
   };
   return (
-    <div className="w-full p-4 rounded-lg border border-gray-200 shadow-lg">
-      <form onSubmit={form.onSubmit(handleSubmit)} className="space-y-6">
+    <div className="w-full p-4 rounded-lg ">
+      <form onSubmit={form.onSubmit(handleSubmit)} className="space-y-10">
         <TextInput
           label="Email"
           type="email"
           //   error="eg"
-          placeholder="you@example.com"
+          classNames={defaultsInputClasses}
+          placeholder="vous@exemple.com"
           leftSection={<FaAt size={18} />}
           {...form.getInputProps("email")}
         />
-        <PasswordInput
-          label={
-            <div className="flex !w-full justify-between gap-10 items-center">
-              <span>Votre mot de passe</span>{" "}
-              <Link href="#" className="text-blue-500">
-                Mot de passe oublié
-              </Link>
-            </div>
-          }
-          type="email"
-          //   error="eg"
-          placeholder="you@example.com"
-          leftSection={<FaLock size={18} />}
+        <div>
+          <PasswordInput
+            label={
+              <div className="flex !w-full justify-between gap-10 items-center">
+                <span>Mot de passe</span>{" "}
+                <Link href="#" className="hidden sm:block text-blue-500">
+                  Mot de passe oublié
+                </Link>
+              </div>
+            }
+            type="email"
+            //   error="eg"
+            placeholder="vous@exemple.com"
+            leftSection={<FaLock size={18} />}
+            classNames={defaultsInputClasses}
+            {...form.getInputProps("password")}
+          />
+          <Link href="#" className="text-right sm:hidden w-full block text-blue-500">
+            Mot de passe oublié
+          </Link>
+        </div>
+        <Button
           classNames={{
-            label: "!w-full",
+            root: "!h-[50px] !text-2xl",
           }}
-          {...form.getInputProps("password")}
-        />
-        <Button type="submit" fullWidth>
+          type="submit"
+          fullWidth
+        >
           SE CONNECTER
         </Button>
         <p>
