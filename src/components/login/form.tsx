@@ -52,7 +52,7 @@ const Form = () => {
         </Button>
         <p>
           Avez vous déjà un compte?{" "}
-          <Link href={`/sign-up`} className="text-blue-500">
+          <Link href={`/register`} className="text-blue-500">
             Créer un compte
           </Link>
         </p>
