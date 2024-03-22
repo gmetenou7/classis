@@ -17,11 +17,11 @@ const Form = () => {
   };
   const handleSubmit = (data: any) => {
     data.preventDefault();
-    console.log("data", data);
+    console.log("data great", data);
   };
   return (
-    <div className="w-full p-4 rounded-lg border border-gray-200 shadow-lg">
-      <form onSubmit={handleSubmit}>
+    <div className="w-full p-4 h-full">
+      <form onSubmit={handleSubmit} className="flex flex-col justify-between h-full">
         <FirstView
           classes={`hidden ${classNames({
             "!block": pageIndex === 0,
