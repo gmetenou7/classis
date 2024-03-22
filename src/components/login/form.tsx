@@ -6,11 +6,8 @@ import { FaAt, FaLock } from "react-icons/fa6";
 import { useForm } from "@mantine/form";
 import { zodResolver } from "mantine-form-zod-resolver";
 import { schema } from "@/app/[locale]/(authentification)/login/schema";
+import { defaultsInputClasses } from "@/utils/input/styles";
 
-const defaultsInputClasses = {
-  input: "!h-[50px] !text-xl",
-  label: "!text-xl !w-full",
-};
 
 const Form = () => {
   const form = useForm({

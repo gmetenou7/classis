@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { BsFillPostageFill } from "react-icons/bs";
 import { FaAt, FaEarthEurope, FaPhone } from "react-icons/fa6";
 import { formContext } from "./form";
+import { defaultsInputClasses } from "@/utils/input/styles";
 
 const SecondView = ({ classes }: { classes?: string }) => {
   const { form } = useContext(formContext);
@@ -17,16 +18,19 @@ const SecondView = ({ classes }: { classes?: string }) => {
         label="Adresse postale, contient la rue, le code postal, la ville et parfois le pays"
         type="text"
         leftSection={<BsFillPostageFill size={18} />}
+        classNames={defaultsInputClasses}
         {...form.getInputProps("address")}
       />
       <TextInput
         label="Numéro de téléphone"
         type="tel"
         leftSection={<FaPhone size={18} />}
+        classNames={defaultsInputClasses}
         {...form.getInputProps("phone")}
       />
       <TextInput
         label="adresse email"
+        classNames={defaultsInputClasses}
         type="email"
         leftSection={<FaAt size={18} />}
         {...form.getInputProps("email")}
@@ -35,6 +39,7 @@ const SecondView = ({ classes }: { classes?: string }) => {
         label="site web"
         type="url"
         leftSection={<FaEarthEurope size={18} />}
+        classNames={defaultsInputClasses}
         {...form.getInputProps("website")}
       />
     </fieldset>

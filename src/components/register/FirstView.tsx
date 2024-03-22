@@ -8,6 +8,7 @@ import { HiIdentification } from "react-icons/hi";
 import { IoBusinessOutline } from "react-icons/io5";
 import { MdOutlineSettingsInputComposite } from "react-icons/md";
 import { formContext } from "./form";
+import { defaultsInputClasses, defaultsTextareaClasses } from "@/utils/input/styles";
 
 const FirstView = ({ classes }: { classes?: string }) => {
   const { form } = useContext(formContext);
@@ -21,27 +22,32 @@ const FirstView = ({ classes }: { classes?: string }) => {
         type="text"
         leftSection={<IoBusinessOutline size={18} />}
         {...form.getInputProps("name")}
+        classNames={defaultsInputClasses}
       />
       <TextInput
         label="Domaine d'activité"
         type="text"
         leftSection={<MdOutlineSettingsInputComposite size={18} />}
         {...form.getInputProps("activityDomain")}
+        classNames={defaultsInputClasses}
       />
       <TextInput
         label="Numéro d'identification fiscale"
         type="text"
         leftSection={<HiIdentification size={18} />}
         {...form.getInputProps("fiscalIdentification")}
+        classNames={defaultsInputClasses}
       />
       <DatePickerInput
         label="Date de creation"
         leftSection={<FaCalendar size={18} />}
         {...form.getInputProps("creationDate")}
+        classNames={defaultsInputClasses}
       />
       <Textarea
         label="Description: un bref résumé de ce que fait l'entreprise"
         {...form.getInputProps("description")}
+        classNames={defaultsTextareaClasses}
       />
     </fieldset>
   );

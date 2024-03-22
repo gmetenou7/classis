@@ -89,13 +89,23 @@ const Form = () => {
           />
           <div className="flex items-center justify-end">
             {pageIndex === 4 ? (
-              <Button type={"submit"} fullWidth key={"submit button"}>
+              <Button
+                type={"submit"}
+                classNames={{
+                  root: "!h-[50px] !text-2xl",
+                }}
+                fullWidth
+                key={"submit button"}
+              >
                 JE CREE MON COMPTE MAINTENANT
               </Button>
             ) : (
               <Button
                 type={"button"}
                 onClick={handleClick}
+                classNames={{
+                  root: "!h-[50px] !text-2xl",
+                }}
                 rightSection={<FaArrowRight size={18} />}
                 key={"next button"}
               >

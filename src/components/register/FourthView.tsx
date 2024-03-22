@@ -4,6 +4,7 @@ import "@mantine/dates/styles.css";
 import React, { useContext, useRef, useState } from "react";
 import { FaPlus, FaXmark } from "react-icons/fa6";
 import { formContext } from "./form";
+import { defaultsInputClasses } from "@/utils/input/styles";
 
 const FourthView = ({ classes }: { classes?: string }) => {
   const { form } = useContext(formContext);
@@ -78,12 +79,14 @@ const FourthView = ({ classes }: { classes?: string }) => {
           ref={nameRef}
           error={errors.name}
           onChange={validate}
+          classNames={defaultsInputClasses}
           label="Nom complet"
         />
         <TextInput
           ref={emailRef}
           error={errors.email}
           onChange={validate}
+          classNames={defaultsInputClasses}
           label="Adresse email"
           type="email"
         />
@@ -92,6 +95,7 @@ const FourthView = ({ classes }: { classes?: string }) => {
           error={errors.phone}
           onChange={validate}
           label="Téléphone"
+          classNames={defaultsInputClasses}
           type="tel"
         />
         <ActionIcon
@@ -101,6 +105,9 @@ const FourthView = ({ classes }: { classes?: string }) => {
           size={37}
           aria-label="add"
           mt={25}
+          classNames={{
+            root: "!h-[50px] !text-2xl",
+          }}
         >
           <FaPlus size={26} />
         </ActionIcon>

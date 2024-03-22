@@ -4,6 +4,7 @@ import "@mantine/dates/styles.css";
 import { useContext } from "react";
 import { IoBusinessOutline } from "react-icons/io5";
 import { formContext } from "./form";
+import { defaultsInputClasses } from "@/utils/input/styles";
 
 const ThirdView = ({ classes }: { classes?: string }) => {
   const { form } = useContext(formContext);
@@ -16,6 +17,7 @@ const ThirdView = ({ classes }: { classes?: string }) => {
         label="Forme juridique"
         placeholder="Veuillez selectionner votre forme juridique"
         data={["SARL", "SAS", "SA"]}
+        classNames={defaultsInputClasses}
         {...form.getInputProps("juridictionStatus")}
       />
     </fieldset>
