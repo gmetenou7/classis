@@ -1,4 +1,4 @@
-import { locales, useRouter } from "@/navigation";
+import { locales, usePathname, useRouter } from "@/navigation";
 import { UnstyledButton } from "@mantine/core";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -6,19 +6,21 @@ import React, { useEffect, useState } from "react";
 const LanguageSwitcher = () => {
   const [lang, setlang] = useState<"fr" | "en">("fr");
   const router = useRouter();
+  const pathname = usePathname();
   useEffect(() => {
     const paths = window.location.pathname.split("/");
     const langPath = paths[1];
     // @ts-ignore
-    if (locales.includes(langPath)) setlang(langPath);
+    setlang(langPath);
+    // router.replace(pathname, { locale: "de" });
   }, []);
   return (
     <UnstyledButton
       onClick={() => {
+        router.push(pathname, { locale: lang === "en" ? "fr" : "en" });
         setlang((prev) => {
-          return (prev === "en" ? "fr" : "en")
+          return prev === "en" ? "fr" : "en";
         });
-        router.push("", { locale: lang });
       }}
       title={lang === "en" ? "changez en français" : "switch to english"}
     >
