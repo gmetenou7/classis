@@ -52,7 +52,7 @@ const Form = () => {
             classNames={defaultsInputClasses}
             {...form.getInputProps("password")}
           />
-          <Link href="#" className="text-right sm:hidden w-full block text-blue-500">
+          <Link href="/forgot-password" className="text-right sm:hidden w-full block text-blue-500">
             Mot de passe oublié
           </Link>
         </div>
@@ -67,7 +67,7 @@ const Form = () => {
         </Button>
         <p>
           Avez vous déjà un compte?{" "}
-          <Link href={`/sign-up`} className="text-blue-500">
+          <Link href={`/register`} className="text-blue-500">
             Créer un compte
           </Link>
         </p>
