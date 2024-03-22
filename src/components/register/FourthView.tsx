@@ -1,11 +1,12 @@
 "use client";
 import { ActionIcon, TextInput } from "@mantine/core";
 import "@mantine/dates/styles.css";
-import classNames from "classnames";
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FaPlus, FaXmark } from "react-icons/fa6";
+import { formContext } from "./form";
 
 const FourthView = ({ classes }: { classes?: string }) => {
+  const { form } = useContext(formContext);
   const [contacts, setContacts] = useState<
     {
       id: number;
@@ -40,10 +41,10 @@ const FourthView = ({ classes }: { classes?: string }) => {
         email: emailRef.current?.value || "",
         phone: phoneRef.current?.value || "",
       });
+      form.setFieldValue("contacts", newValue);
       return newValue;
     });
   };
-  console.log("errors", errors);
   const validate = () => {
     let isValid = true;
     Object.keys(errors).forEach((key) => {
