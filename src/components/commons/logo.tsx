@@ -1,8 +1,10 @@
+import { useRouter } from "@/navigation";
 import Image from "next/image";
 
 const Logo = () => {
+  const router = useRouter()
   return (
-    <div className="flex items-center gap-3 shrink-0 mr-4">
+    <div onClick={() => router.push("/")} className="flex items-center gap-3 cursor-pointer shrink-0 mr-4">
       <Image
         src={"/images/logo.png"}
         alt="classis"
