@@ -2,7 +2,7 @@
   @apply border-b-gray-300 container mx-auto border-solid;
 }
 .link {
-  @apply flex items-center h-full pl-[var(--mantine-spacing-md)] pr-[var(--mantine-spacing-md)] no-underline text-[light-dark(var(--mantine-color-black),var(--mantine-color-white))] font-medium text-[length:var(--mantine-font-size-sm)];
+  @apply flex items-center h-full pl-[var(--mantine-spacing-md)] pr-[var(--mantine-spacing-md)] no-underline font-medium text-xl;
 }
 @media only screen and (max-width: var(--mantine-sm-breakpoint)) {
   .link {

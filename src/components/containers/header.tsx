@@ -54,12 +54,12 @@ const Header = () => {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="Navigation"
+        // title="Navigation"
         hiddenFrom="sm"
         zIndex={1000000}
+        // withCloseButton={false}
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
-          <Divider my="sm" />
 
           <a href="#" className={classes.link}>
             Home
