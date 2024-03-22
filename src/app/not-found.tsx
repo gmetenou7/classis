@@ -12,19 +12,22 @@ function NothingFoundBackground() {
           <Title
             className={"text-center font-black sm:text-[38px] text-[32px]"}
           >
-            Nothing to see here
+            Rien par ici!
           </Title>
           <p
             className={
               "max-w-[540px] m-auto mt-[35px] mb-[75px] text-center text-gray-900"
             }
           >
-            Page you are trying to open does not exist. You may have mistyped
-            the address, or the page has been moved to another URL. If you think
-            this is an error contact support.
+            La page que vous essayez d'ouvrir n'existe pas. Il se peut que vous
+            ayez mal saisi l'adresse ou que la page ait été déplacée vers un
+            autre URL. l'adresse, ou la page a été déplacée vers une autre URL.
+            Si vous pensez qu'il s'agit d'une qu'il s'agit d'une erreur,
+            contactez l'assistance.
           </p>
           <Group justify="center">
-            <Button size="md">Take me back to home page</Button>
+            <Button size="md">Revenir à la page d'accueil</Button>
+            <Button variant="outline" size="md">Revenir ou j'etais</Button>
           </Group>
         </div>
       </div>

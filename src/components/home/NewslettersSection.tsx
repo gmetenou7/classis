@@ -4,7 +4,7 @@ import { FaClock, FaMessage, FaPhone } from "react-icons/fa6";
 
 const NewslettersSection = () => {
   return (
-    <div className="relative bottom-[-150px] text-white">
+    <div className="relative bottom-[-50px] text-white">
       <div className="container flex-col lg:flex-row mx-auto bg-[#09b850] rounded-lg p-5  flex justify-between">
         <NewsletterForm classes="text-center lg:text-left lg:w-1/2  lg:max-w-[450px]" />
         <div className="lg:space-y-3 mt-4 lg:mt-0 flex gap-6 flex-wrap justify-center items-center lg:flex-col  lg:items-end">
