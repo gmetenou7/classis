@@ -7,7 +7,7 @@ import {
   Drawer,
   Group,
   ScrollArea,
-  rem
+  rem,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import LanguageSwitcher from "../buttons/languageSwitcher";
@@ -20,25 +20,31 @@ const Header = () => {
   return (
     <div className="py-5 px-2 sticky top-0 left-0 bg-white shadow-md z-50">
       <header className={classes.header}>
-        <Group justify="space-between" h="100%">
+        <Group justify="space-between" wrap="nowrap" h="100%">
           <Logo />
+          <Group
+            visibleFrom="sm"
+            wrap="nowrap"
+            className="overflow-y-scroll"
+            gap={15}
+          >
+            <Group h="100%" wrap="nowrap" gap={0} visibleFrom="sm">
+              <a href="#" className={classes.link}>
+                Présentation
+              </a>
+              <a href="#" className={classes.link}>
+                Contact
+              </a>
+              <a href="#" className={classes.link}>
+                A propos
+              </a>
+            </Group>
 
-          <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link}>
-              Présentation
-            </a>
-            <a href="#" className={classes.link}>
-              Contact
-            </a>
-            <a href="#" className={classes.link}>
-              A propos
-            </a>
-          </Group>
-
-          <Group visibleFrom="sm">
-            <LanguageSwitcher />
-            <Button variant="default">Connexion</Button>
-            <Button>Inscription</Button>
+            <Group wrap="nowrap" visibleFrom="sm">
+              <LanguageSwitcher />
+              <Button variant="default">Connexion</Button>
+              <Button>Inscription</Button>
+            </Group>
           </Group>
 
           <Burger
@@ -54,12 +60,11 @@ const Header = () => {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        // title="Navigation"
         hiddenFrom="sm"
         zIndex={1000000}
-        // withCloseButton={false}
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+          <Divider my="sm" />
 
           <a href="#" className={classes.link}>
             Home
