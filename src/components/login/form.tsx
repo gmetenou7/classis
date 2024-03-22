@@ -46,7 +46,6 @@ const Form = () => {
               </div>
             }
             type="email"
-            //   error="eg"
             placeholder="vous@exemple.com"
             leftSection={<FaLock size={18} />}
             classNames={defaultsInputClasses}
