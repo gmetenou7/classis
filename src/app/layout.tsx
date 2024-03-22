@@ -3,10 +3,8 @@ import Header from "@/components/containers/header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { createTheme, MantineProvider } from "@mantine/core";
+import { ColorSchemeScript, createTheme, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
-
-const theme = createTheme({});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang={lng}>
       <body className={inter.className}>
-        <MantineProvider theme={theme}>
+        <ColorSchemeScript forceColorScheme="light" />
+        <MantineProvider forceColorScheme="light">
           <Header />
           {children}
           <Footer />
