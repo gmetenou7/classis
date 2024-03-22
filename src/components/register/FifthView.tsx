@@ -8,7 +8,7 @@ const FifthView = ({ classes }: { classes?: string }) => {
         classes || ""
       }`}
     >
-      <p className="w-fit tect-center">
+      <p className="w-fit text-center text-2xl min-w-[80%] sm:text-3xl sm:min-w-[400px] text-[#228be6] font-bold">
         Bravo vous y êtes arrivé, <br /> Un dernier clic pour terminer
       </p>
     </div>

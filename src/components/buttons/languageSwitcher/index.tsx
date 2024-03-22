@@ -8,7 +8,6 @@ const LanguageSwitcher = () => {
   const router = useRouter();
   useEffect(() => {
     const paths = window.location.pathname.split("/");
-    console.log("paths", paths);
     const langPath = paths[1];
     // @ts-ignore
     if (locales.includes(langPath)) setlang(langPath);

@@ -18,7 +18,7 @@ const Header = () => {
           <Logo />
           <Group
             wrap="nowrap"
-            className="overflow-x-scroll overflow-y-hidden"
+            className="header-button"
             gap={15}
           >
             <Group h="100%" wrap="nowrap" gap={0} >
