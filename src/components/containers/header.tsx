@@ -17,7 +17,6 @@ import {
   useMantineTheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import {
   IconBook,
   IconChartPie3,
@@ -27,8 +26,8 @@ import {
   IconFingerprint,
   IconNotification,
 } from "@tabler/icons-react";
-import Logo from "../commons/logo";
 import LanguageSwitcher from "../buttons/languageSwitcher";
+import Logo from "../commons/logo";
 
 const mockdata = [
   {
