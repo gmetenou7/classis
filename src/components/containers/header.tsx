@@ -7,11 +7,7 @@ import {
   Drawer,
   Group,
   ScrollArea,
-  Text,
-  ThemeIcon,
-  UnstyledButton,
-  rem,
-  useMantineTheme,
+  rem
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import LanguageSwitcher from "../buttons/languageSwitcher";
@@ -25,7 +21,6 @@ const Header = () => {
     <div className="py-5 px-2 sticky top-0 left-0 bg-white shadow-md z-50">
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          {/* <MantineLogo size={30} /> */}
           <Logo />
 
           <Group h="100%" gap={0} visibleFrom="sm">
