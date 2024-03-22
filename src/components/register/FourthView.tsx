@@ -48,7 +48,6 @@ const FourthView = ({ classes }: { classes?: string }) => {
   const validate = () => {
     let isValid = true;
     Object.keys(errors).forEach((key) => {
-      console.log("key", refs[key as keyof typeof refs].current?.value);
       if (!refs[key as keyof typeof refs].current?.value) {
         isValid = false;
         setErrors((prev) => ({ ...prev, [key]: "Ce champ est requis!" }));

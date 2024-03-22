@@ -55,7 +55,6 @@ const Form = () => {
   const handleSubmit = (data: any) => {
     console.log("submit", data);
   };
-  console.log("errors", form.errors);
   return (
     <formContext.Provider value={{ form }}>
       <div className="w-full p-4 h-full">
