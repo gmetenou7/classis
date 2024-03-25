@@ -55,7 +55,7 @@ const Sidebar = ({}: SidebarProps) => {
           />
           {isSidebarOpen && (
             <h1 className=" ml-2 text-xl font-semibold text-white">
-              ShakibAdmin
+              Classis
             </h1>
           )}
         </Link>
